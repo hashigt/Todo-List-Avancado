@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Define o conjunto de caracteres usado na página -->
     <meta charset="UTF-8">
+
+    <!-- Define que a página será responsiva, ajustando-se à largura da tela do dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
     <title>Todo Avançado</title>
-    <!-- CSS do projeto -->
+
+    <!-- Importa o arquivo de estilos CSS da aplicação -->
     <link rel="stylesheet" href="CSS/styles.css">
-    
-    <!-- Font Awesome -->
+
+    <!-- Importa os ícones da biblioteca Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- JS do projeto -->
+
+    <!-- Importa o script JavaScript da aplicação. O "defer" garante que o JS será carregado após o HTML -->
     <script src="JS/scripts.js" defer></script>
 </head>
 <body>
+    <!-- Container principal da aplicação -->
     <div class="todo-container">
+
+        <!-- Cabeçalho com o título -->
         <header>
             <h1>Todo Avançado</h1>
         </header>
+
+        <!-- Formulário para adicionar nova tarefa -->
         <form id="todo-form">
             <p>Adicione a sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="todo-input" placeholder="O que você vai fazer?">
                 <button type="submit">
+                    <!-- Ícone de adicionar -->
                     <i class="fa-regular fa-plus"></i>
                 </button>
             </div>
         </form>
+
+        <!-- Formulário para editar uma tarefa (inicialmente escondido com a classe "hide") -->
         <form id="edit-form" class="hide">
             <p>Edite sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
                 <button type="submit">
+                    <!-- Ícone de confirmar edição -->
                     <i class="fa-solid fa-check-double"></i>
                 </button>
             </div>
+            <!-- Botão para cancelar a edição -->
             <button id="cancela-edit-btn">Cancelar</button>
         </form>
+
+        <!-- Barra de ferramentas com campo de busca e filtro -->
         <div id="toolbar">
+
+            <!-- Seção de busca por tarefas -->
             <div id="search">
                 <h4>Pesquisar:</h4>
                 <form>
                     <input type="text" id="search-input" placeholder="Buscar">
                     <button id="erase-button">
+                        <!-- Ícone de apagar texto -->
                         <i class="fa-solid fa-delete-left"></i>
                     </button>
                 </form>
             </div>
+
+            <!-- Seção de filtro de tarefas -->
             <div id="filter">
                 <h4>Filtrar:</h4>
                 <select id="filter-select">
@@ -55,19 +79,28 @@
                 </select>
             </div>
         </div>
+
+        <!-- Lista de tarefas -->
         <div id="todo-list">
-            <div class="todo done">
+
+            <!-- Exemplo de tarefa já concluída (classe "done") -->
+            <!-- <div class="todo done">
                 <h3>Estou fazendo alguma coisa</h3>
+                Botão para marcar/desmarcar como feito
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
                 </button>
+                Botão para editar a tarefa
                 <button class="edit-todo">
                     <i class="fa-solid fa-pen"></i>
                 </button>
+                Botão para remover a tarefa
                 <button class="remove-todo">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
+
+            Exemplo de tarefa pendente
             <div class="todo">
                 <h3>Estudar JavaScript</h3>
                 <button class="finish-todo">
@@ -79,7 +112,8 @@
                 <button class="remove-todo">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-            </div>
+            </div> -->
+
         </div>
     </div>
 </body>
