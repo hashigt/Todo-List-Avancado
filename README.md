@@ -44,16 +44,3 @@ Bash
 cd nome-do-seu-repositorio
 Abra o arquivo index.html no seu navegador de preferência.
 
-🎨 Estilização
-
-O CSS (CSS/styles.css) define a aparência do aplicativo, garantindo uma experiência de usuário agradável e responsiva. Ele inclui estilos para:
-
-Layout geral do contêiner e seus elementos.
-
-Botões com efeitos de hover e ícones.
-
-Formulários de adição e edição.
-
-Barra de ferramentas de busca e filtro.
-
-Estilo visual para tarefas concluídas (.done).
